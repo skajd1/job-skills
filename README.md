@@ -29,9 +29,12 @@ result/
 
 ## Humanizer
 
-AI 초안 문체를 줄이기 위해 `im-not-ai`의 Codex용 `humanize-korean` 스킬을 설치해 사용합니다.
+AI 초안 문체를 줄이기 위해 `epoko77-ai/im-not-ai` 저장소의 Codex용 `humanize-korean` 스킬을 설치해 사용합니다.
 
-- 설치 위치: `C:\Users\wooch\.codex\skills\humanize-korean`
+- 원본 저장소: `https://github.com/epoko77-ai/im-not-ai`
+- 설치 방법: [humanizer_사용법.md](humanizer_사용법.md)의 "새 로컬 환경 설치"를 따릅니다.
+- 일반 설치: `git clone https://github.com/epoko77-ai/im-not-ai.git` 후 `./install.sh --codex-only`
+- Windows 심링크 문제가 있으면 `im-not-ai/codex/skills/humanize-korean`을 `%USERPROFILE%\.codex\skills\humanize-korean`에 복사합니다.
 - 사용법: 새 Codex 세션에서 `$humanize-korean`을 호출하거나, "이 자소서 AI 티 없애줘"처럼 요청합니다.
 - 기본 흐름: 초안 작성 후 `humanize-korean` 검수를 거친 문장을 같은 `.md` 파일에 덮어씁니다.
 - 최종 산출물은 `result/기업명/` 폴더 안의 Markdown 파일 1개만 남깁니다. 별도 초안 파일이나 humanizer 결과 파일을 따로 두지 않습니다.
