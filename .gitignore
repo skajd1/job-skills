@@ -1,0 +1,6 @@
+# Real company application drafts
+/result/
+
+# Generated/local artifacts
+/tmp/
+/_workspace/
